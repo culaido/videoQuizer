@@ -6,7 +6,7 @@
 	"type": "project",
 	"require": {
 		"laravel/framework": "5.0.*",
-		"laravel/socialite": "~2.0"
+		"anahkiasen/former": "4.0.x-dev"
 	},
 	"require-dev": {
 		"phpunit/phpunit": "~4.0",
@@ -40,6 +40,6 @@
 		]
 	},
 	"config": {
-		"preferred-install": "dist"
+		"preferred-install": "auto"
 	}
 }
