@@ -1,17 +1,5 @@
 @extends('layout.main')
 
-
-@section('banner')
-<div id="banner">
-	<div class="row">
-		<div class='col-md-12 title'>{{ Lang::get('m.login') }}</div>
-		<div class='white-shadow'></div>
-	</div>
-</div>
-@stop
-
-
-
 @section('content')
 <div class='col-md-6' style='line-height:2'>
 	{{ Lang::get('m.loginInfo') }!}

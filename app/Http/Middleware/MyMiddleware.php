@@ -2,6 +2,7 @@
 namespace App\Http\Middleware;
 
 use Closure;
+use Illuminate\Contracts\Auth\Guard;
 
 class MyMiddleware {
 
@@ -12,6 +13,14 @@ class MyMiddleware {
 	 * @param  \Closure  $next
 	 * @return mixed
 	 */
+	 
+	protected $auth;
+	
+	public function __construct(Guard $auth)
+	{
+		$this->auth = $auth;
+	}
+	
 	public function handle($request, Closure $next)
 	{		
 		\App::singleton('site_config', function(){
@@ -22,6 +31,14 @@ class MyMiddleware {
 
 			return $_CONFIG;
 		});
+
+		if ( $this->auth->guest() )
+		{
+			print_r ( $request->route() );
+		//	return redirect('');
+		}
+		
+		
 		
 		return $next($request);
 	}

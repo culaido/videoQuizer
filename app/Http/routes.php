@@ -25,4 +25,9 @@ App::before(function($request)
 */
 
 
-Route::get('/', 'WelcomeController@index');
+Route::get( '/', array('as' => 'home', 'uses' => 'WelcomeController@index') );
+
+Route::group(['middleware' => 'auth'], function() {
+    // lots of routes that require auth middleware
+});
+
