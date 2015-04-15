@@ -144,6 +144,9 @@ return [
 		'App\Providers\ConfigServiceProvider',
 		'App\Providers\EventServiceProvider',
 		'App\Providers\RouteServiceProvider',
+		
+		'Illuminate\Html\HtmlServiceProvider',
+		'Former\FormerServiceProvider',
 
 	],
 
@@ -192,7 +195,10 @@ return [
 		'URL'       => 'Illuminate\Support\Facades\URL',
 		'Validator' => 'Illuminate\Support\Facades\Validator',
 		'View'      => 'Illuminate\Support\Facades\View',
+		
+		'HTML'      => 'Illuminate\Html\HtmlFacade',
 
+		'Former' 	=> 'Former\Facades\Former',
 	],
 
 ];

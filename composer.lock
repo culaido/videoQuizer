@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "6a826877272e0495d21a72600f645a59",
+    "hash": "c7e104769e90ba1a0b46fbe56cd342f7",
     "packages": [
         {
             "name": "anahkiasen/former",
@@ -319,6 +319,52 @@
                 "string"
             ],
             "time": "2014-12-20 21:24:13"
+        },
+        {
+            "name": "illuminate/html",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/illuminate/html.git",
+                "reference": "3d1009bb8e0f25720c914af5c1f4015dd373c9ef"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/illuminate/html/zipball/3d1009bb8e0f25720c914af5c1f4015dd373c9ef",
+                "reference": "3d1009bb8e0f25720c914af5c1f4015dd373c9ef",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/http": "~5.0",
+                "illuminate/session": "~5.0",
+                "illuminate/support": "~5.0",
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "5.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Illuminate\\Html\\": ""
+                },
+                "files": [
+                    "helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylorotwell@gmail.com"
+                }
+            ],
+            "time": "2015-01-01 16:31:18"
         },
         {
             "name": "ircmaxell/password-compat",
@@ -1032,6 +1078,119 @@
                 "shell"
             ],
             "time": "2015-03-26 18:43:54"
+        },
+        {
+            "name": "stayallive/authority",
+            "version": "2.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Stayallive/authority.git",
+                "reference": "477721fc0a3c206c1886e90e3415754d92904f8d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Stayallive/authority/zipball/477721fc0a3c206c1886e90e3415754d92904f8d",
+                "reference": "477721fc0a3c206c1886e90e3415754d92904f8d",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/events": "~5.0",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "0.7.*",
+                "phpunit/phpunit": "3.7.*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Authority": "src/"
+                }
+            },
+            "license": [
+                "mit"
+            ],
+            "authors": [
+                {
+                    "name": "Matthew Machuga",
+                    "email": "machuga@gmail.com"
+                },
+                {
+                    "name": "Koen Schmeets",
+                    "email": "hello@koenschmeets.nl"
+                },
+                {
+                    "name": "Jesse O'Brien",
+                    "email": "jesse@jesse-obrien.ca"
+                }
+            ],
+            "description": "A simple and flexible authorization system for PHP",
+            "support": {
+                "source": "https://github.com/Stayallive/authority/tree/2.2.1"
+            },
+            "time": "2015-01-18 23:19:54"
+        },
+        {
+            "name": "stayallive/authority-l5",
+            "version": "2.4.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Stayallive/authority-l5.git",
+                "reference": "7340f738c8f3a9e507a7bd9736c5e9e84042a7e8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Stayallive/authority-l5/zipball/7340f738c8f3a9e507a7bd9736c5e9e84042a7e8",
+                "reference": "7340f738c8f3a9e507a7bd9736c5e9e84042a7e8",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "~5.0",
+                "php": ">=5.3.0",
+                "stayallive/authority": "2.2.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Authority\\AuthorityL5": "src/"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Matthew Machuga",
+                    "email": "machuga@gmail.com"
+                },
+                {
+                    "name": "Koen Schmeets",
+                    "email": "hello@koenschmeets.nl"
+                },
+                {
+                    "name": "Jesse O'Brien",
+                    "email": "jesse@jesse-obrien.ca"
+                },
+                {
+                    "name": "Conar Welsh",
+                    "email": "conar@welshlabs.com"
+                }
+            ],
+            "description": "A simple and flexible authorization system for PHP",
+            "homepage": "https://github.com/stayallive/authority-l5",
+            "keywords": [
+                "authentication",
+                "authorization",
+                "laravel",
+                "laravel 5"
+            ],
+            "support": {
+                "source": "https://github.com/Stayallive/authority-l5/tree/2.4.2",
+                "issues": "https://github.com/Stayallive/authority-l5/issues"
+            },
+            "time": "2015-03-21 20:30:17"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -2921,7 +3080,8 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "anahkiasen/former": 20
+        "anahkiasen/former": 20,
+        "illuminate/html": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

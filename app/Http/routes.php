@@ -10,7 +10,19 @@
 | and give it the controller to call when that URI is requested.
 |
 */
+/*
+App::before(function($request)
+{
+    App::singleton('site_config', function(){
+        $obj = array('name' => 'test');
+
+		$_CONFIG = array();
+		foreach ( $obj as $v ) $_CONFIG['name'] = $v['value'];
+
+        return $_CONFIG;
+    });
+});
+*/
+
 
 Route::get('/', 'WelcomeController@index');
-
-Route::get('home', 'HomeController@index');
